@@ -1,0 +1,454 @@
+:root {
+  --performance-bar-height: 0px;
+  --system-header-height: 0px;
+  --top-bar-height: 0px;
+  --system-footer-height: 0px;
+  --mr-review-bar-height: 0px;
+  --application-bar-left: 0px;
+  --application-bar-right: 0px;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6d49cb;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #626168;
+  --gray-dark: #434248;
+  --primary: #007bff;
+  --secondary: #ececef;
+  --success: #108548;
+  --info: #1f75cb;
+  --warning: #ab6100;
+  --danger: #dd2b0e;
+  --light: #dcdcde;
+  --dark: #434248;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: var(--default-regular-font, "GitLab Sans"),
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu,
+    Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: var(--default-mono-font, "GitLab Mono"),
+    "JetBrains Mono", "Menlo", "DejaVu Sans Mono", "Liberation Mono", "Consolas",
+    "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+* {
+  font-variant-ligatures: none;
+}
+
+body {
+  font-family: "Martian Mono", monospace;
+  font-size: 0.875rem;
+  font-family: var(--default-regular-font, "GitLab Sans"), -apple-system,
+    BlinkMacSystemFont, segoe ui, Roboto, noto sans, Ubuntu, Cantarell,
+    helvetica neue, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol, noto color emoji;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333238;
+}
+
+.login-page .container {
+  max-width: 960px;
+}
+
+.logo {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.logo_img {
+  vertical-align: middle;
+  border-style: none;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  width: 3.5rem;
+}
+
+.header_text {
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #333238;
+  margin-top: 20px;
+  font-size: 1.1875rem;
+  margin-bottom: 1rem !important;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+  margin-top: 0em;
+}
+
+.login-page .container {
+  max-width: 960px;
+  // border: 1px solid red;
+}
+
+.container {
+  padding-top: 0;
+  z-index: 5;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+}
+
+.form-control {
+  width: 98%;
+  border: 1px solid red;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #333238;
+  border: 1px solid #89888d;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control {
+  height: 32px;
+}
+
+label {
+  font-weight: 600;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.gl-m-5 {
+  padding: 1rem;
+}
+
+a {
+  color: #1f75cb;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+input:hover {
+  box-shadow: 0 0 0 2px rgb(9, 187, 232);
+}
+
+.hover-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* .hover-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  /* transform-origin: bottom right; */
+/* transition: transform 0.25s ease-out; */
+/* } */
+
+// .hover-animation:hover:after {
+//   transform: scaleX(1);
+/* transform-origin: bottom left; */
+// }
+.custom-control-label::after {
+  position: absolute;
+  top: 0.25rem;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: 50%/50% 50% no-repeat;
+}
+
+p {
+  display: block;
+  text-decoration: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 1rem;
+}
+
+.gl-button.gl-button.btn-default .gl-icon,
+.gl-button.gl-button.btn-dashed .gl-icon,
+.gl-button.gl-button.btn-block.btn-default .gl-icon,
+.gl-button.gl-button.btn-block.btn-dashed .gl-icon {
+  color: #737278;
+}
+
+.input-icon-wrapper > .input-icon-right {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-45%);
+  color: #89888d;
+}
+
+.gl-icon {
+  fill: currentColor;
+}
+
+.gl-button {
+  display: inline-flex;
+}
+
+.field-icon {
+  float: right;
+  position: absolute;
+  top: 16rem;
+  right: 30%;
+  cursor: pointer;
+}
+
+.form-text {
+  text-align: right;
+}
+
+.form-checkbox .form-radio {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: #333238;
+  font-weight: 400;
+}
+
+.custom-control-label::after {
+  position: absolute;
+  top: 0.25rem;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: 50%/50% 50% no-repeat;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.btn-block {
+  width: 100%;
+  margin: 0;
+}
+
+.button {
+  margin: 0;
+}
+
+.gl-button.btn-block {
+  border-width: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  line-height: 1rem;
+  background-color: transparent;
+  line-height: 1rem;
+  color: #333238;
+  fill: currentColor;
+  box-shadow: inset 0 0 0 1px #bfbfc3;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
+  border-radius: 0.25rem;
+  background-color: #1f75cb;
+  border-color: #767679;
+  color: #ffffff;
+  white-space: nowrap;
+  box-shadow: inset 0 0 0 1px #626168;
+}
+
+.gl-py-5 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.gl-px {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.gi-text {
+  text-align: center;
+}
+
+.gl-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gl-display-flex {
+  display: flex;
+}
+
+.gl-gap-5 {
+  gap: 2rem;
+}
+
+.section {
+  display: block;
+  margin: auto;
+  width: var(--breakpoint-sm);
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  display: inline-box;
+}
+
+.gl-button.gl-button .gl-button-text,
+.gl-button.gl-button.btn-block .gl-button-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  line-height: 1rem;
+}
+
+.or-text {
+  text-align: center;
+}
+
+.gl-mb-2 {
+  margin-bottom: 0.25rem;
+}
+
+.mm {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.gl-w-full {
+  width: 100%;
+}
+
+.gl-mb-2 {
+  margin-bottom: 0.25rem;
+}
+
+.img {
+  vertical-align: middle;
+  border-style: none;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.gl-button.gl-button .gl-button-icon,
+.gl-button.gl-button.btn-block .gl-button-icon {
+  height: 1rem;
+  width: 1rem;
+  flex-shrink: 0;
+  margin-right: 0.25rem;
+  top: auto;
+  grid-column: 1rem;
+}
+
+.btn-default-2:hover {
+  background-color: #dcdcde !important;
+  border: 1px solid #808082 !important;
+}
+
+.btn-default-2 {
+  padding: 6px 10px !important;
+  background-color: #fff !important;
+  color: #333238 !important;
+  border-color: #dcdcde !important;
+  /* border-radius: 1px solid ; */
+  border-radius: 1px solid #888;
+  border: 1px solid red;
+} /*# sourceMappingURL=style.css.map */
+.btn-sm {
+  background-color: #fff;
+  border: none;
+  float: right !important;
+  margin-bottom: 0.5rem;
+  justify-content: flex-end;
+}
+.btn-sm:hover {
+  background-color: #fff;
+  /* border-radius: blue; */
+  border: 1px solid rgb(100, 94, 245);
+}
+.gl-m-0 {
+  width: auto;
+}
+
+// @media (min-width: 575px) and {
+// }
+
+// .footer-button-right-part:hover {
+//   background-color: gray;
+// }
+
+.footer-section {
+  display: flex;
+  // border: 1px solid red;
+  // background-color: #007bff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10rem;
+}
+.footer-content {
+  display: flex;
+  gap: 2rem;
+}
+.footer-button {
+  background-color: #fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: 2px;
+}
+@media screen and (min-width: 250px) and (max-width: 576px) {
+  .form-main-container {
+    align-items: center;
+    width: 500px;
+    align-content: center;
+  }
+}

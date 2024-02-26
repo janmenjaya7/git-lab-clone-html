@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Signin.GitLab btn</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="img/logo.svg" type="img/logo" />
+  </head>
+  <body>
+    <div class="section">
+      <div class="">
+        <div class="content">
+          <div class="logo">
+            <img class="logo_img" src="img/logo.svg" />
+            <h1 class="header_text">GitLab.com</h1>
+          </div>
+          <div class="">
+            <div class="">
+              <div class="form-main-container">
+                <div class="signin-container">
+                  <div class="tab-content">
+                    <div class="login-box">
+                      <div class="login-body">
+                        <form class="form">
+                          <div class="form-group">
+                            <label class="User_login">Username or email</label>
+                            <input
+                              class="form-control form-input"
+                              type="text"
+                              value=""
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label class="User_pass">Password</label>
+                            <div id="login-form">
+                              <input
+                                class="form-control"
+                                type="password"
+                                id="pass"
+                                name="password"
+                              />
+                              <span
+                                class="fa fa-fw fa-eye field-icon toggle-password"
+                                id="show-password"
+                              >
+                              </span>
+                            </div>
+                          </div>
+                          <div class="form-text">
+                            <a href="#">Forgot your password?</a>
+                          </div>
+
+                          <div class="form-group">
+                            <div class="form-group">
+                              <div class="form-checkbox custom-control-label">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-label"
+                                />
+                                <label for="vehicle1">Remember me</label><br />
+                              </div>
+                            </div>
+                          </div>
+                          <button class="gl-button btn-block btn">
+                            <span class="gl-button-text">Sign in</span>
+                          </button>
+                        </form>
+                      </div>
+                      <div>
+                        <p class="gl-px">
+                          By signing in you accept the
+                          <a href="#">
+                            Terms of Use and acknowledge the Privacy Policy and
+                            Cookie Policy</a
+                          >.
+                        </p>
+                        <p class="gi-text">
+                          Don't have an account yet?
+                          <a class="regester-link">Register now</a>
+                        </p>
+                      </div>
+                      <div class="">
+                        <p class="or-text">
+                          ----------------------------- or sign in with
+                          ----------------------------------
+                        </p>
+                      </div>
+                      <div
+                        class="gl gl-px-5 omniauth-container gl-text-center gl-ml-auto gl-mr-auto mm"
+                      >
+                        <form class="gl-mb-3">
+                          <button
+                            class="gl-button btn-block gl-button btn-default-2 gl-mb-2"
+                            type="submit"
+                          >
+                            <img src="img/1.png" class="gl-button-icon" />
+                            <span class="gl-button-text">Google</span>
+                          </button>
+                        </form>
+                        <form class="gl-mb-3">
+                          <button
+                            class="gl-button btn-block gl-button btn-default-2 gl-mb-2"
+                            type="submit"
+                          >
+                            <img
+                              src="img/2.png"
+                              class="gl-button-icon js-lazy-loaded"
+                            />
+                            <span class="gl-button-text"> GitHub</span>
+                          </button>
+                        </form>
+                        <form class="gl-mb-3">
+                          <button
+                            class="gl-button btn-block gl-button btn-default-2 gl-mb-2"
+                            type="submit"
+                          >
+                            <img
+                              src="img/3.png"
+                              class="gl-button-icon js-lazy-loaded"
+                            />
+                            <span class="gl-button-text"> Bitbucket</span>
+                          </button>
+                        </form>
+                        <form class="gl-mb-3">
+                          <button
+                            class="gl-button btn-block gl-button btn-default-2 gl-mb-2"
+                            type="submit"
+                          >
+                            <img src="" class="gl-button-icon js-lazy-loaded" />
+                            <span class="gl-button-text"> Salesforce</span>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="gl-m-0" />
+    <div class="footer-section">
+      <!-- <hr class="gl-m-0" /> -->
+      <div>
+        <div class="footer-content">
+          <a href="#">Explore</a>
+          <a href="#">Help</a>
+          <a href="#">About GitLab</a>
+          <a href="#">Community forum</a>
+        </div>
+      </div>
+      <div>
+        <button class="footer-button">
+          <i class="fa fa-globe"></i>
+          <span class="gl-button-text">
+            <span class="gl-new-dropdown-button-text"
+              >English
+              <i class="fa fa-caret-down"></i>
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <script>
+      const showPassword = document.getElementById("show-password");
+      showPassword.addEventListener("click", function () {
+        const passwordField = document.querySelector("#pass");
+
+        this.classList.toggle("fa-eye-slash");
+        const type =
+          passwordField.getAttribute("type") === "password"
+            ? "text"
+            : "password";
+
+        console.log(type);
+        passwordField.setAttribute("type", type);
+      });
+    </script>
+  </body>
+</html>
